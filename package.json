@@ -1,0 +1,26 @@
+{
+  "name": "bachataRevelationApp",
+  "version": "1.0.0",
+  "description": "This project is a sample application demonstrating a more fully developed realistic single page angular application.",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "1.13.1",
+    "eslint-config-google": "0.6.0",
+    "eslint-plugin-angular": "^1.0.0",
+    "express": "4.13.0",
+    "moment": "^2.12.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-plugin-angular": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/web-server.js",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC"
+}

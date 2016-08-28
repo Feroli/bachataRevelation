@@ -1,0 +1,87 @@
+<!doctype html>
+<html ng-app="bachataRevelationApp">
+    <head>
+        <base href="/"/>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" contents="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+        <!-- Angular Material -->
+        <link rel="stylesheet" href="/lib/angular-material-icons/angular-material-icons.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="/lib/angular-material/angular-material.css" media="screen" title="no title" charset="utf-8">
+
+        <!-- Hover Effect -->
+        <link rel="stylesheet" href="/lib/hover/css/hover.min.css" media="screen" title="no title" charset="utf-8">
+
+        <!-- My CSS -->
+        <link rel="stylesheet" href="/css/style.css">
+
+        <style type="text/css">
+          [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+          }
+        </style>
+    </head>
+
+
+   <body layout="row" ng-cloak ng-controller="MainMenuCtrl as vm">
+        <div ng-include="'./partials/sideNav.html'" layout="vertical"></div>
+        <div layout="column" flex id="wrapper">
+          <div class="toolbar" ng-include="'./partials/toolbar.html'" layout="vertical"></div>
+          <md-content class="content">
+           <ng-view></ng-view>
+         </div>
+       </md-content>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-resource/angular-resource.js"></script>
+        <script src="lib/angular-route/angular-route.js"></script>
+        <script src="lib/angular-sanitize/angular-sanitize.js"></script>
+        <script src="lib/angular-animate/angular-animate.js"></script>
+        <script src="lib/angular-messages/angular-messages.js"></script>
+        <script src="lib/angular-material/angular-material.js"></script>
+        <script src="lib/angular-material-icons/angular-material-icons.js"></script>
+        <script src="lib/angular-aria/angular-aria.js"></script>
+        <script src="lib/underscore/underscore.js"></script>
+        <script src="lib/moment/moment.js"></script>
+        <!-- <script src="lib/locale-en-gb.js"></script> -->
+
+        <!-- angular maps -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASIhX9J20Lpat7OJ_D7UoffYAXX5O6qvM"
+            async defer></script>
+        <script src="lib/angular-google-maps/dist/angular-google-maps.min.js"></script>
+
+        <script src="lib/lodash/dist/lodash.min.js"></script>
+        <script src="lib/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+        <!-- <script src='//maps.googleapis.com/maps/api/js?sensor=false'></script> -->
+
+
+        <script src="js/app.js"></script>
+
+
+        <!--  controllers -->
+          <script src="controllers/MainMenuCtrl.js"></script>
+          <script src="controllers/AboutCtrl.js"></script>
+          <script src="controllers/ClassesCtrl.js"></script>
+          <script src="controllers/ContactUsCtrl.js"></script>
+          <script src="controllers/EventDetailsCtrl.js"></script>
+          <script src="controllers/EventListCtrl.js"></script>
+          <script src="controllers/BlogCtrl.js"></script>
+          <script src="controllers/IntroCtrl.js"></script>
+
+        <!-- services -->
+
+        <!-- directive -->
+
+
+        <!-- maps api -->
+
+
+
+    </body>
+</html>

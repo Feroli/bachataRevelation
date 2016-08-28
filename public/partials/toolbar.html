@@ -1,0 +1,38 @@
+<md-toolbar class="md-whiteframe-2dp">
+   <div class="md-toolbar-tools" layout-padding>
+       <h1 id="hotspot" ng-click="vm.intro()" class="navBtns" style="cursor:pointer;font-weight:bold;color:white">Bachata Revelation</h1>
+
+       <div hide-xs layout="row" flex="85" layout-align="end center">
+       <md-button aria-label="Profile" class="navBtns" ng-click="vm.goToAbout()">
+          About
+       </md-button>
+       <md-button aria-label="Classes" class="navBtns" ng-click="vm.goToClasses()">
+          Classes
+       </md-button>
+       <md-button aria-label="Events" class="navBtns" ng-click="vm.goToEvents()">
+          Events
+       </md-button>
+       <!-- <md-button aria-label="Events" class="navBtns" ng-click="vm.goToBlog()">
+          Blog
+       </md-button> -->
+       <md-button aria-label="Contact Us" class="navBtns" ng-click="vm.goToContactUs()">
+          Contact Us
+       </md-button>
+     </div>
+
+       <md-button hide-gt-xs
+                  ng-click="vm.toggleSideNav()"
+                  class="md-icon-button"
+                  flex="70"
+                  aria-label="toggle Side Navigation">
+
+        <ng-md-icon icon="menu"
+                    id="menu-icon"
+                    fill="white"
+                    size="24" >
+
+        </ng-md-icon>
+      </md-button>
+
+  </div>
+</md-toolbar>

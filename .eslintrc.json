@@ -1,0 +1,13 @@
+{
+    "extends": "google",
+    "rules": {
+        "indent": ["error", 4],
+        "new-cap": "off",
+        "require-jsdoc": "off"
+    },
+    "globals": {
+        "bachataRevelationApp": "true",
+        "angular": "true",
+        "moment": "true"
+    }
+ }

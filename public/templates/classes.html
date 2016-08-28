@@ -1,0 +1,53 @@
+<h1 style="margin-left:auto;margin-right:auto;" class="md-display-3" flex="15">Classes</h1>
+<hr>
+
+<div layout="row" layout-padding style="margin-left:15%;"layout-align="space-between center"flex class="">
+
+    <div class="" layout-padding flex=30>
+        <p>
+            We run a friendly 2 hours class where we teach mainly sensual/moderna, and occassionally traditional bachata.
+            <br>
+            <br>
+            <b style="color:#d81b60">Setup:</b>
+        </p>
+        <p>
+            1 hour Beginner/Improver (2 levels)
+            <br>
+            2 hour Improver/Advanced (2 levels)
+            <br>
+        </p>
+        <p>
+            £5 for 1 class
+            <br>
+            £7 for 2 classes
+            <br>
+            Free Social!
+        </p>
+    Monday 8pm + free social until close
+    <br>
+    <br>
+    The Old Brewery Quarter,
+    <br>
+    Cardiff,
+    <br>
+    CF10 1FG
+    </div>
+
+    <div flex="75" layout-aling="center center" style="margin-left:60px" layout-padding class="">
+         <img ng-src="assets/img/bachataRevelation.jpg" height="60%" width="60%" alt="" />
+    </div>
+
+</div>
+
+<div layout="column" layout-align="center center" class="" flex=>
+
+    <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom'>
+        <ui-gmap-circle  ng-repeat="c in vm.circles track by c.id" center="c.center" idkey="c.id" radius="c.radius" fill="c.fill" stroke="c.stroke">
+        </ui-gmap-circle>
+        <!-- <ui-gmap-marker coords="vm.marker.coords" options="vm.marker.options" events="vm.marker.events" idkey="vm.marker.id">
+        </ui-gmap-marker> -->
+    </ui-gmap-google-map>
+
+</div>
+
+<br>

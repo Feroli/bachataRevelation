@@ -1,0 +1,25 @@
+<md-sidenav
+  class="md-sidenav-right"
+  md-component-id="right"
+  md-is-locked-closed="$mdMedia('gt-sm')"
+  md-whiteframe="4">
+
+<div layout="column">
+  <md-button aria-label="About" class="lnk" ng-click="vm.goToAbout()">
+     About
+  </md-button>
+  <md-button flex aria-label="Classes" class="lnk" ng-click="vm.goToClasses()">
+     Classes
+  </md-button>
+  <md-button flex aria-label="Events" class="lnk" ng-click="vm.goToEvents()">
+     Events
+ </md-button>
+  <!-- <md-button flex aria-label="Blog" ng-click="vm.goToBlog()">
+     Blog
+  </md-button> -->
+  <md-button flex aria-label="Contact Us" class="lnk" ng-click="vm.goToContactUs()">
+     Contact Us
+  </md-button>
+</div>
+
+</md-sidenav>
