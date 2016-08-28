@@ -27,6 +27,9 @@
     "underscore": "^1.8.3",
     "moment": "^2.14.1",
     "angular-aria": "^1.5.8",
-    "hover": "Hover#^2.0.2"
+    "hover": "Hover#^2.0.2",
+    "angular-google-maps": "^2.3.4",
+    "angular-simple-logger": "^0.1.7",
+    "lodash": "^4.15.0"
   }
 }
