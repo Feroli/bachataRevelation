@@ -12,6 +12,7 @@ let bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(rootPath + '/public'));
+app.use('/bower_components', express.static(__dirname + '/../public/lib/'));
 
 app.get('*', function(req, res) {
     res.sendFile(rootPath + '/public/index.html');
