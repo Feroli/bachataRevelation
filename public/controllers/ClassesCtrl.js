@@ -10,15 +10,15 @@ function ClassesCtrl(uiGmapGoogleMapApi, $log) {
     let vm = this;
 
     vm.markers = [];
-    vm.map = {center: {latitude: 51.477954, longitude: -3.176751}, zoom: 18};
+    vm.map = {center: {latitude: 51.480701, longitude: -3.178833}, zoom: 18};
     vm.test = test;
 
     vm.circles = [
         {
             id: 1,
             center: {
-                latitude: 51.477954,
-                longitude: -3.176751
+                latitude: 51.480535,
+                longitude: -3.178922
             },
             radius: 3,
             stroke: {
@@ -42,8 +42,8 @@ function ClassesCtrl(uiGmapGoogleMapApi, $log) {
     vm.marker = {
         id: 0,
         coords: {
-            latitude: 40.1451,
-            longitude: -99.6680
+            latitude: 51.480701,
+            longitude: -3.178833
         },
         options: {draggable: true},
         events: {
@@ -56,7 +56,8 @@ function ClassesCtrl(uiGmapGoogleMapApi, $log) {
 
                 vm.marker.options = {
                     draggable: true,
-                    labelContent: "lat: " + vm.marker.coords.latitude + ' ' + 'lon: ' + vm.marker.coords.longitude,
+                    labelContent: "lat: " + vm.marker.coords.latitude + ' ' +
+                    'lon: ' + vm.marker.coords.longitude,
                     labelAnchor: "100 0",
                     labelClass: "marker-labels"
                 };
@@ -69,6 +70,6 @@ function ClassesCtrl(uiGmapGoogleMapApi, $log) {
     }
 
     uiGmapGoogleMapApi.then(function(maps) {
-        vm.map = {center: {latitude: 51.477954, longitude: -3.176751}, zoom: 18};
+        vm.map = {center: {latitude: 51.480701, longitude: -3.178833}, zoom: 25};
     });
 }
