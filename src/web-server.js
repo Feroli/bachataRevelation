@@ -9,6 +9,8 @@ let app = express();
 let rootPath = path.normalize(__dirname + '/../');
 let bodyParser = require('body-parser');
 
+// for seo purposes
+app.use(require('prerender-node'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(rootPath + '/public'));
