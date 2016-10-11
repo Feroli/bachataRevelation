@@ -17,6 +17,7 @@ html, body {
     position: fixed;
     background-color: #464446 !important;
 
+
 }
 
 .toolbar {
@@ -40,7 +41,6 @@ html, body {
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
     border-radius: 150px;
-	background: url(http://link-to-your/image.jpg) no-repeat;
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
     box-shadow: 0 0 8px rgba(0, 0, 0, .8);
