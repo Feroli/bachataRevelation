@@ -41,9 +41,19 @@ function routing($routeProvider,
             controller: 'BlogCtrl',
             controllerAs: 'vm'
         })
+        .when('/blog/:blogId', {
+            templateUrl: 'templates/blogItem.html',
+            controller: 'BlogItemCtrl',
+            controllerAs: 'vm'
+        })
         .when('/contactUs', {
             templateUrl: 'templates/contactUs.html',
             controller: 'ContactUsCtrl',
+            controllerAs: 'vm'
+        })
+        .when('/team', {
+            templateUrl: 'templates/team.html',
+            controller: 'TeamCtrl',
             controllerAs: 'vm'
         })
         .when('/events', {
@@ -97,8 +107,8 @@ function routing($routeProvider,
 
     // theme configuring
     $mdThemingProvider.theme('default')
-        .primaryPalette('blue', {
-            'default': '600',
+        .primaryPalette('grey', {
+            'default': '900',
             'hue-1': '100',
             'hue-2': '600',
             'hue-3': 'A100'

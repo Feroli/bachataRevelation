@@ -1,38 +1,50 @@
-<md-toolbar class="md-whiteframe-2dp">
-   <div class="md-toolbar-tools" layout-padding>
-       <h1 id="hotspot" ng-click="vm.intro()" class="navBtns" style="cursor:pointer;font-weight:bold;color:white">Bachata Revelation</h1>
+<md-toolbar class="md-whiteframe-2dp md-hue-3" style="">
+    <div class="md-toolbar-tools" layout-padding style="padding-left: 10%;padding-right: 10%;">
+        <h1 id="hotspot" layout="row" ng-click="vm.intro()" class="hotspot" style="font-weight:bold;width:30%;outline:none;">Bachata Revelation</h1>
 
-       <div hide-xs layout="row" flex="85" layout-align="end center">
-       <md-button aria-label="Profile" class="navBtns" ng-click="vm.goToAbout()">
-          About
-       </md-button>
-       <md-button aria-label="Classes" class="navBtns" ng-click="vm.goToClasses()">
-          Classes
-       </md-button>
-       <md-button aria-label="Events" class="navBtns" ng-click="vm.goToEvents()">
-          Events
-       </md-button>
-       <!-- <md-button aria-label="Events" class="navBtns" ng-click="vm.goToBlog()">
-          Blog
-       </md-button> -->
-       <md-button aria-label="Contact Us" class="navBtns" ng-click="vm.goToContactUs()">
-          Contact Us
-       </md-button>
-     </div>
+        <div hide-xs layout="row" flex="85" layout-align="end center">
 
-       <md-button hide-gt-xs
-                  ng-click="vm.toggleSideNav()"
-                  class="md-icon-button"
-                  flex="70"
-                  aria-label="toggle Side Navigation">
+            <md-button aria-label="Profile" class="navBtns" ng-click="vm.goToAbout()">
+                About
+            </md-button>
 
-        <ng-md-icon icon="menu"
-                    id="menu-icon"
-                    fill="white"
-                    size="24" >
+            <md-button aria-label="Classes" class="navBtns" ng-click="vm.goToClasses()">
+                Classes
+            </md-button>
 
-        </ng-md-icon>
-      </md-button>
+            <md-button aria-label="Events" class="navBtns" ng-click="vm.goToEvents()">
+                Events
+            </md-button>
 
-  </div>
+            <md-button aria-label="Blog" class="navBtns" ng-click="vm.goToBlog()">
+                Blog
+            </md-button>
+
+            <md-button aria-label="Contact Us" class="navBtns" ng-click="vm.goToContactUs()">
+                Contact Us
+            </md-button>
+        </div>
+
+        <span hide-gt-xs ng-click="vm.toggleSideNav()" style="outline:none; cursor:pointer;" class=""  flex aria-label="toggle Side Navigation">
+
+            <ng-md-icon icon="menu" id="menu-icon" fill="white" flex-offset="60" size="24"></ng-md-icon>
+        </span>
+
+    </div>
 </md-toolbar>
+
+<!-- <div class="" flex style="" layout-align="end center">
+
+
+    <md-content  class="md-padding md-whiteframe-2dp md-hue-3" style="padding-bottom:60px;">
+
+        <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links" class="" style="">
+          <md-nav-item md-nav-click="vm.goToAbout()" name="About">About</md-nav-item>
+          <md-nav-item md-nav-click="vm.goToClasses()" name="Classes">Classes</md-nav-item>
+          <md-nav-item md-nav-click="vm.goToEvents()" name="Events">Events</md-nav-item>
+          <md-nav-item md-nav-click="vm.goToBlog()" name="Blog">Blog</md-nav-item>
+          <md-nav-item md-nav-click="vm.goToContactUs()"  name="ContactUs">Contact Us</md-nav-item>
+        </md-nav-bar>
+
+  </md-content> -->
+</div>

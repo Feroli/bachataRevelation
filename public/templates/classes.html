@@ -1,57 +1,59 @@
-<h1 style="margin-left:auto;margin-right:auto;" class="md-display-3" flex="15">Classes</h1>
-<hr>
+<!-- <h1 style="margin-left:auto;margin-right:auto;" class="md-display-3" flex="15">Classes</h1>
+<hr> -->
 
-<div layout="row" layout-padding style="margin-left:15%;"layout-align="space-between center"flex class="">
+<div layout="row" layout-align="space-around start" layout-xs="column" layout-sm="column" layout-md="column" style="margin-top:7.5%;" md-colors="{color: 'primary-600'}">
 
-    <div class="" layout-padding flex=30>
-        <p>
-            We run a friendly 2 hours class where we teach Sensual traditional bachata.
-            <br>
-            <br>
-            <b style="color:#d81b60">Setup:</b>
-        </p>
-        <p>
-            Free Intro
-            <br>
-            8pm Sensual Bachata
-            <br>
-            9pm Traditional Bachata
-            <br>
-        </p>
-        <p>
-            £5 for 1 class
-            <br>
-            £7 for 2 classes
-            <br>
-            Free Social!
-        </p>
-    Monday 8pm + free social until close
-    <br>
-    <br>
-    10 Feet Tall,
-    <br>
-    11A-12 Church Street,
-    <br>
-    Cardiff,
-    <br>
-    CF10 1BG
+    <div flex-offset="10" flex="50">
+        <a ng-href="https://www.facebook.com/BachataRev/" style="text-decoration:none;" target="blank">
+            <img class="yo" style="margin-left:5%;" ng-src="assets/img/ultimate.jpg"/>
+        </a>
     </div>
 
-    <div flex="75" layout-aling="center center" style="margin-left:60px" layout-padding class="">
-         <img ng-src="assets/img/ultimate.jpg" height="450px" width="60%" alt="" />
+    <div flex class="" layout-align="center center" style="margin-left:-5%;" layout="column">
+        <h5 class="md-headline" md-colors="{color: 'primary-900'}">Set up</h5>
+        <hr style="margin-top:-15px;">
+
+        <div class="" flex layout="row" layout-align="space-around start" style="margin-top:15px;">
+
+            <div class="" layout="column" style="padding-right:100px;">
+
+                Free Intro
+                <br>
+                8pm Sensual Bachata
+                <br>
+                9pm Traditional Bachata
+
+            </div>
+
+            <div class="" layout="column" style="padding-left:100px;">
+                £5 for 1 class
+                <br>
+                £7 for 2 classes
+                <br>
+                Free Social!
+            </div>
+
+        </div>
+        <h5 class="md-headline" md-colors="{color: 'primary-900'}">Location</h5>
+        <hr style="margin-top:-15px;">
+
+        <div class="" layout="column" class="" flex layout-align="center start">
+            <div flex-offset="15">
+                <p>
+                    10 Feet Tall, 11A-12 Church Street, Cardiff, CF10 1BG
+                </p>
+            </div>
+
+            <div style="max-width:20px;max-height:50px; margin-left:-35%;">
+
+                <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom' >
+                    <ui-gmap-circle ng-repeat="c in vm.circles track by c.id" center="c.center" idkey="c.id" radius="c.radius" fill="c.fill" stroke="c.stroke"></ui-gmap-circle>
+                    <!-- <ui-gmap-marker coords="vm.marker.coords" options="vm.marker.options" events="vm.marker.events" idkey="vm.marker.id">
+            </ui-gmap-marker> -->
+                </ui-gmap-google-map>
+
+            </div>
+        </div>
+
     </div>
-
 </div>
-
-<div layout="column" layout-align="center center" class="" flex=>
-
-    <ui-gmap-google-map center='vm.map.center' zoom='vm.map.zoom'>
-        <ui-gmap-circle  ng-repeat="c in vm.circles track by c.id" center="c.center" idkey="c.id" radius="c.radius" fill="c.fill" stroke="c.stroke">
-        </ui-gmap-circle>
-        <!-- <ui-gmap-marker coords="vm.marker.coords" options="vm.marker.options" events="vm.marker.events" idkey="vm.marker.id">
-        </ui-gmap-marker> -->
-    </ui-gmap-google-map>
-
-</div>
-
-<br>

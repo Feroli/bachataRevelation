@@ -13,6 +13,11 @@ function ClassesCtrl(uiGmapGoogleMapApi, $log) {
     vm.map = {center: {latitude: 51.480701, longitude: -3.178833}, zoom: 18};
     vm.test = test;
 
+    vm.currNavItem = 'Classes';
+    vm.goto = function(page) {
+        vm.currNavItem = page;
+    };
+
     vm.circles = [
         {
             id: 1,
