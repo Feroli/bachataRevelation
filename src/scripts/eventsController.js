@@ -3,6 +3,7 @@
 let fs = require('fs');
 
 module.exports.get = function(req, res) {
+    console.log('over here');
     let event = fs.readFileSync('/Users/Feroli/sites/bachataRevelation/public/data/event/' +
      req.params.id + '.json', 'utf8');
 

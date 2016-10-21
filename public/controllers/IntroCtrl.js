@@ -18,6 +18,5 @@ function IntroCtrl($location) {
     function goToAbout() {
         $location.replace();
         $location.url('/about');
-        console.log('df');
     }
 }

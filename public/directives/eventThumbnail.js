@@ -5,8 +5,6 @@ angular
 
 /* @ngInject */
 function directive() {
-    console.log('hjhj');
-
     let directive = {
         restrict: 'EA',
         templateUrl: 'templates/directives/eventThumbnail.html',
