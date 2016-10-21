@@ -1,0 +1,20 @@
+<md-button style="margin-bottom:20px; margin-left:10px;">
+    <ng-md-icon icon="keyboard_arrow_up"
+                 size="48"
+                 class="focus-click"
+                 style="cursor:pointer;fill:#FF4081;"
+                 ng-click="upvote()"></ng-md-icon>
+</md-button>
+   <md-whiteframe class="md-whiteframe-z0 vote-count"
+                  layout>
+      {{count}}
+   </md-whiteframe>
+   <md-button style="margin-top:25px:" class="">
+
+  <ng-md-icon  icon="keyboard_arrow_down"
+               size="48"
+               class="focus-click"
+               style="fill:#FF4081;margin-left:1px"
+               ng-click="downvote()">
+  </ng-md-icon>
+  </md-button>

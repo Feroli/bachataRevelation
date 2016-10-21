@@ -76,8 +76,8 @@ function routing($routeProvider,
             templateUrl: 'templates/directives/testDirective.html',
             controller: 'MainMenuCtrl',
             controllerAs: 'vm'
-        })
-    .otherwise({redirectTo: '/'});
+        });
+    // .otherwise({redirectTo: '/'});
 
     // html5Mode
     $locationProvider.html5Mode(true);

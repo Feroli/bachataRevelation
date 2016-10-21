@@ -1,0 +1,59 @@
+{
+  "name": "BachaDiff",
+  "id": 1,
+  "date": "16/12/2016",
+  "time": "7:30pm - 12:00pm",
+  "price": "£8 two workshops, £5 party only",
+  "location": {
+    "address": "O'neills",
+    "city": "Cardiff"
+  },
+  "imageUrl": "https://scontent.flcy1-1.fna.fbcdn.net/v/t1.0-9/14705814_950483965082432_4791333459662963732_n.jpg?oh=154f745a07fc80abb99e6de084f56e62&oe=5899CC34",
+  "sessions": [
+    {
+      "id": 1,
+      "name": "Sensual Bachata",
+      "creatorName": "Daniel and Pebbles",
+      "duration": 2,
+      "level": "Intermediate",
+      "abstract": "In this workshop you will learn how to step up your game in Sensual Bachata",
+      "upVoteCount": 0
+    },
+    {
+      "id": 2,
+      "name": "Traditional Bachata",
+      "creatorName": "Daniel and Pebbles",
+      "duration": 2,
+      "level": "Intermediate",
+      "abstract": "In this workshop you will learn how to step up your game in Traditional Bachata",
+      "upVoteCount": 0
+    },
+    {
+      "id": 3,
+      "name": "Sensual Bachata",
+      "creatorName": "Fernando Ania",
+      "duration": 2,
+      "level": "Introductory",
+      "abstract": "In this workshop you will learn the basics of Sensual Bachata",
+      "upVoteCount": 0
+    },
+    {
+      "id": 4,
+      "name": "Traditional Bachata",
+      "creatorName": "Fernando Ania",
+      "duration": 2,
+      "level": "Introductory",
+      "abstract": "In this workshop you will learn the basics of Traditional Bachata",
+      "upVoteCount": 0
+    },
+    {
+      "id": 6,
+      "name": "Party",
+      "creatorName": "Bachata Revelation",
+      "duration": 6,
+      "level": "Everyone",
+      "abstract": "Party! Party! Party! Everybode come and shake a leg!",
+      "upVoteCount": 0
+    }
+  ]
+}

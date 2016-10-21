@@ -6,6 +6,7 @@ let port = process.env.PORT || 5000;
 
 let path = require('path');
 let app = express();
+let events = require('./scripts/eventsController');
 let rootPath = path.normalize(__dirname + '/../');
 let bodyParser = require('body-parser');
 
@@ -15,6 +16,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(express.static(rootPath + '/public'));
 app.use('/bower_components', express.static(__dirname + '/../public/lib/'));
+app.use("/public", express.static(path.join(__dirname, 'public')));
+
+app.get('/data/event/:id', events.get);
+app.get('/data/event', events.getAll);
+app.post('/data/event/:id', events.save);
 
 app.get('*', function(req, res) {
     res.sendFile(rootPath + '/public/index.html');

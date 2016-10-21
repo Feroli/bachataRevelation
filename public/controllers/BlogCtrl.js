@@ -4,11 +4,19 @@ angular
 .module('bachataRevelationApp')
 .controller('BlogCtrl', BlogCtrl);
 
-BlogCtrl.$inject = [];
+BlogCtrl.$inject = ['$location'];
 
-function BlogCtrl() {
+function BlogCtrl($location) {
     let vm = this;
     vm.test = test;
+
+    // vm.events = blogData.getAllBlogs();
+    //
+    // vm.blogInfo = blogInfo;
+    //
+    // function blogInfo(id) {
+    //     $location.url('/event/' + id);
+    // }
 
     function test() {
 

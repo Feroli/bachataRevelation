@@ -1,0 +1,73 @@
+<div layout="column" layout-padding style="margin-top:90px;" layout-wrap md-colors="{color: 'primary-700'}">
+
+  <a flex="100" style="width:100%" ng-href="https://www.facebook.com/BachaDiff/?fref=ts" class="event-banner">
+      <img flex="100"  style="width:100%" ng-src="{{vm.event.imageUrl}}" alt="{{vm.event.name}}"/>
+  </a>
+
+  <div class="" style="max-width:70%;margin-left:auto;margin-right:auto;">
+
+
+  <h1 style="padding-top:40px;text-align:center"class="md-headline" md-colors="{color: 'primary-900'}">{{vm.event.name}} Info </h1>
+  <hr>
+
+  <div  style="font-size:1.2rem;" layout-gt-sm="row" flex class="md-whiteframe-z3" layout layout-margin layout-padding layout-wrap>
+  <div layout="column" flex 70>
+      <div><strong md-colors="{color: 'accent-700'}">Date:</strong> {{vm.event.date}}</div>
+      <div style="padding-top:20px;padding-bottom:20px;"><strong md-colors="{color: 'accent-700'}">Time:</strong> {{vm.event.time}}</div>
+      <div><strong md-colors="{color: 'accent-700'}">Price:</strong> {{vm.event.price}}</div>
+    </div>
+
+    <div layout="column" flex>
+        <strong md-colors="{color: 'accent-700'}" style="margin-top:-10px;">Address:</strong>
+        {{vm.event.location.address}}
+        {{vm.event.location.city}}, {{vm.event.location.province}}
+    </div>
+  </div>
+  <!-- <md-divider class="divider"></md-divider> -->
+
+   <h2 style="padding-top:40px;text-align:center"class="md-headline" md-colors="{color: 'primary-900'}">Sessions </h2>
+   <hr style="margin-bottom:70px;">
+
+  <div layout-gt-sm="row" layout-wrap>
+
+    <div  flex>
+      <b md-colors="{color: 'accent-700'}">Order By:</b>
+      <md-select name="" id="" ng-model="sortorder" class="input-small">
+        <md-option  value="name" selected>Name</md-option>
+        <md-option  value="-upVoteCount">Votes</md-option>
+      </md-select>
+    </div>
+    <div  flex>
+      <b md-colors="{color: 'accent-700'}">Show:</b>
+      <md-select name="" id="" ng-model="query.level" class="input-small">
+        <md-option  value="" selected>All</md-option>
+        <md-option  value="introductory">Introductory</md-option>
+        <md-option  value="intermediate">Intermediate</md-option>
+        <md-option  value="advanced">Advanced</md-option>
+        <md-option  value="Everyone">Everyone</md-option>
+
+      </md-select>
+    </div>
+  </div>
+  <md-content  md-colors="{color: 'primary-700'}">
+    <md-list>
+      <md-list-item layout-gt-sm="row" ng-repeat="session in vm.event.sessions | orderBy:sortorder | filter: query" id="session{{session.id}}">
+         <md-whiteframe flex class="md-whiteframe-z3" layout layout-margin layout-padding>
+            <div class="md-list-item-text" flex="85" layout="column">
+              <collapsible session="session" title="{{session.name}}" style="">
+                  <hr>
+                  <h4 md-colors="{color: 'accent-800'}">{{ session.creatorName }}</h4>
+                  <p><b md-colors="{color: 'accent-700'}">Duration:</b> {{ session.duration | durations }}</p>
+                  <p><b md-colors="{color: 'accent-700'}">Difficulty:</b> {{ session.level }}</p>
+                  <p>{{session.abstract}}</p>
+             </collapsible>
+            </div>
+            <!-- <div layout="column"  style="text-align:center;">
+              <up-vote session="session" upvote="vm.upVoteSession(session)" style="margin-top:40px;" downvote="vm.downVoteSession(session)" count="session.upVoteCount" />
+            </div> -->
+         </md-whiteframe>
+      </md-list-item>
+    </md-list>
+  </md-content>
+    </div>
+</div>
