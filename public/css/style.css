@@ -385,4 +385,8 @@ li {
     width: 80%;
     max-width: 80%;
 }
+
+.mobile-intro-title {
+    /*font-size: 30px;*/
+}
 }
