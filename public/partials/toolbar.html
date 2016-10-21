@@ -2,7 +2,7 @@
     <div class="md-toolbar-tools" layout-padding style="padding-left: 10%;padding-right: 10%;">
         <h1 id="hotspot" layout="row" ng-click="vm.intro()" class="hotspot" style="font-weight:bold;width:30%;outline:none;">Bachata Revelation</h1>
 
-        <div hide-xs layout="row" flex="85" layout-align="end center">
+        <div hide-xs hide-sm layout="row" flex="85" layout-align="end center">
 
             <md-button aria-label="Profile" class="navBtns" ng-click="vm.goToAbout()">
                 About
@@ -25,7 +25,7 @@
             </md-button>
         </div>
 
-        <span hide-gt-xs ng-click="vm.toggleSideNav()" style="outline:none; cursor:pointer;" class=""  flex aria-label="toggle Side Navigation">
+        <span hide-gt-sm ng-click="vm.toggleSideNav()" style="outline:none; cursor:pointer;" class=""  flex aria-label="toggle Side Navigation">
 
             <ng-md-icon icon="menu" id="menu-icon" fill="white" flex-offset="60" size="24"></ng-md-icon>
         </span>

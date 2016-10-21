@@ -347,3 +347,22 @@ li {
 .hvr-float:active {
   transform: translateY(-8px);
 }
+
+@media only screen and (max-width: 600px) {
+.mobile-fer-ali {
+    margin-left: 60%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wide {
+
+    width: 80%;
+    max-width: 80%;
+}
+}
