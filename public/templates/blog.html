@@ -1,61 +1,10 @@
-<div class="" layout-align="center center">
+<!-- <div class="" layout-align="center center">
     <h1 style="margin-top:10%;" class="md-display-2"  md-colors="{color: 'primary-600'}" flex flex-offset="30">Blog will be available soon</h1>
-</div>
-<!-- <div class="" style="margin-top:60px;" layout="column"> -->
-
-<!-- <div class="" layout="row" layout-padding layout-wrap layout-margin ng-cloak layout-align="space-around">
-
-    <div class="padded"
-         md-whiteframe="{{height}}"
-         flex="100"
-         flex-gt-sm="50"
-         layout="column"
-         layout-align="center center"
-         ng-init="height = 3"
-         ng-mouseenter="height = 9"
-         ng-mouseleave="height = 3">
-
-            <span ng-non-bindable>md-whiteframe="{{height}}"</span>
-            <span>md-whiteframe="{{height}}"</span>
-            <span>Hover to toggle</span>
-     </div>
-
-</div>
-
-<div class="" layout="row" layout-padding layout-wrap layout-margin ng-cloak layout-align="space-around">
-
-    <div class="padded"
-         md-whiteframe="{{h}}"
-         flex="100"
-         flex-gt-sm="50"
-         layout="column"
-         layout-align="center center"
-         ng-init="h = 3"
-         ng-mouseenter="h = 9"
-         ng-mouseleave="h = 3">
-
-            <span ng-non-bindable>md-whiteframe="{{h}}"</span>
-            <span>md-whiteframe="{{h}}"</span>
-            <span>Hover to toggle</span>
-     </div>
-
 </div> -->
+<md-content class="md-padding" style="padding-top:7.5%;max-width:100%;margin-left:auto;margin-right:auto" layout-xs="column" layout="column" >
+    <div flex-xs flex-gt-xs="10" style="margin-left:auto;margin-right:auto" ng-repeat="article in vm.blog">
+      <articles-thumbnail article="article"/>
 
-<!-- <md-content class="md-padding" layout-xs="column" layout="row">
-    <div flex-xs flex-gt-xs="50" layout="column">
-        <md-card>
-            <img ng-src="assets/img/ottoMono.jpg" class="md-card-image" alt="Washed Out">
-            <md-card-title>
-              <md-card-title-text>
-                <span class="md-headline">Card header</span>
-              </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-              <p md-colors="{color: 'primary-600'}">
-                The titles of Washed Out's breakthrough song and the first single from Paracosm share the
-                two most important words in Ernest Greene's musical language: feel it. It's a simple request, as well...
-              </p>
-            </md-card-content>
-          </md-card>
-     </div>
- </md-content> -->
+    </div>
+
+</md-content>

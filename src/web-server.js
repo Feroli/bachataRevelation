@@ -7,6 +7,7 @@ let port = process.env.PORT || 5000;
 let path = require('path');
 let app = express();
 let events = require('./scripts/eventsController');
+let blog = require('./scripts/blogController');
 let rootPath = path.normalize(__dirname + '/../');
 let bodyParser = require('body-parser');
 
@@ -21,6 +22,10 @@ app.use("/public", express.static(path.join(__dirname, 'public')));
 app.get('/data/event/:id', events.get);
 app.get('/data/event', events.getAll);
 app.post('/data/event/:id', events.save);
+
+app.get('/data/blog/:id', blog.get);
+app.get('/data/blog', blog.getAll);
+app.post('/data/blog/:id', blog.save);
 
 app.get('*', function(req, res) {
     res.sendFile(rootPath + '/public/index.html');

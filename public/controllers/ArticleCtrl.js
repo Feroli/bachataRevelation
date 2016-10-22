@@ -2,29 +2,25 @@
 
 angular
 .module('bachataRevelationApp')
-.controller('EventDetailsCtrl', EventDetailsCtrl);
+.controller('ArticleCtrl', ArticleCtrl);
 
-EventDetailsCtrl.$inject = ['$routeParams',
+ArticleCtrl.$inject = ['$routeParams',
                             '$route',
                             '$log',
                             '$location',
                             '$anchorScroll'];
 
-function EventDetailsCtrl($routeParams,
-                          $route,
-                          $log,
-                          $location,
-                          $anchorScroll) {
+function ArticleCtrl($routeParams, $route, $log, $location, $anchorScroll) {
     let vm = this;
     vm.test = test;
 
     vm.sortorder = 'name';
-    vm.event = $route.current.locals.event;
+    vm.blog = $route.current.locals.blog;
     vm.reload = reload;
     vm.upVoteSession = upVoteSession;
     vm.downVoteSession = downVoteSession;
     vm.scrollToSession = scrollToSession;
-    vm.eventList = eventList;
+    vm.blogList = blogList;
 
     function reload() {
         $route.reload();
@@ -41,8 +37,8 @@ function EventDetailsCtrl($routeParams,
     function scrollToSession() {
         $anchorScroll();
     }
-    function eventList() {
-        $location.url('/event');
+    function blogList() {
+        $location.url('/blog');
     }
 
     function test() {

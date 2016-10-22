@@ -1,0 +1,14 @@
+<div layout="column" layout-padding style="margin-top:90px;" layout-wrap md-colors="{color: 'primary-700'}">
+
+      <img flex="100" flex-offset="30"  style="max-width:50%; max-height:50%;" ng-src="{{vm.blog.imageUrl}}" alt="{{vm.blog.name}}"/>
+
+  <div class="" style="max-width:70%;margin-left:auto;margin-right:auto;">
+
+      <h1 style="padding-top:40px;text-align:center"class="md-headline" md-colors="{color: 'primary-900'}">{{vm.blog.name}}</h1>
+      <hr>
+
+      <div  style="font-size:1.2rem;" layout-gt-sm="row" flex class="md-whiteframe-z3" layout layout-margin layout-padding layout-wrap>
+          {{vm.blog.article}}
+      </div>
+  </div>
+</div>

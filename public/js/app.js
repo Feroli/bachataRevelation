@@ -42,9 +42,15 @@ function routing($routeProvider,
             controllerAs: 'vm'
         })
         .when('/blog/:blogId', {
-            templateUrl: 'templates/blogItem.html',
-            controller: 'BlogItemCtrl',
-            controllerAs: 'vm'
+            templateUrl: 'templates/article.html',
+            controller: 'ArticleCtrl',
+            controllerAs: 'vm',
+            resolve: {
+                blog: function($route, blogData) {
+                    return blogData.getBlog($route.current.pathParams.blogId)
+                     .$promise;
+                }
+            }
         })
         .when('/contactUs', {
             templateUrl: 'templates/contactUs.html',
