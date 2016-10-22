@@ -6,10 +6,18 @@
 
       <h1 style="padding-top:40px;text-align:center"class="md-headline" md-colors="{color: 'primary-900'}">{{vm.blog.name}}</h1>
       <hr>
+      <div style="font-size:1.2rem;" layout-gt-sm="row" flex class="md-whiteframe-z3" layout layout-margin layout-padding layout-wrap>
+          <div  ng-repeat="article in vm.blog.article">
 
-      <div  style="font-size:1.2rem;" layout-gt-sm="row" flex class="md-whiteframe-z3" layout layout-margin layout-padding layout-wrap>
-          {{vm.blog.article}}
+              {{article.para1}}
+              {{article.para2}}
+              {{article.para3}}
+              {{article.para4}}
+              {{article.para5}}
+              {{article.para6}}
+          </div>
       </div>
+
       <div class="">
           <h5>{{vm.blog.author}}</h5>
       </div>

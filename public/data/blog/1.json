@@ -1,20 +1,28 @@
 {
-  "name": "Origin of Bachata",
-  "id": 1,
-  "date": "21/10/2016",
-  "summary": "Bachata. One of the most popular latin dances in the world has traveled a long way since it started. Now it has evolved into a beautiful art but it's important to remember the origins of bachata.",
-  "imageUrl": "https://cdn.everfest.com/uploads/festival_series/hosted_cover_photo/festival-del-merengue-santo-domingo-dominican-republic.jpg?v=1472281692",
-  "article":
-  "Bachata originates from the fields in the dominican republic. Similarly to salsa this music was created by the common people. These people did not have school education or a title that qualified them to create a music genre. However, due to their contact with nature and absence of the technological advances they were able enjoy from a time where their minds could wonder free of the stress we have today. As a source of fun they developed the music we know today as Traditional or Dominican Bachata. I prefer the term Traditional Bachata as when we talk about music all Bachata is dominican. For example, there is no such thing as Spanish Bachata, French Bachata, Polish Bachata, etc. Now, when we refer to the dance then it makes sense to use Dominican Bachata as it refers to the original bachata given that we have many style of bachata (e.g., Bachata Sensual, Bachatango, Bachata moderna, etc).
-
-  At the moment there is a lot of drama in the Bachata world due to the rise of the different styles of bachata dances, as they have become more popular than the traditional bachata and have now become the face of bachata.
-
-  How were this styles developed and why?
-
-  This question was one of the questions that I pondered for a while as I found it incredible that people could take the bachata essence and mix it with their own dance experience and culture to make something new.
-
-  The main reason why these new styles emerged is due to the influences of U.S pop music in the Dominican Republic. As U.S pop music gain traction bachata in the Dominican Republic became slower and gained a different feel to. Therefore styles such as Sensual Bachata attempt to capture this feeling by adding circular movements to the dance. This has given bachata dance
-
-  My opinion on this regard is that despite the how different the new style of bachata are from how bachata is danced traditionally we should embrace them. I’m not saying that we should disregard traditional bachata, instead that we let it be. People will dance bachata however they want to dance. This is a social dance and if the people prefer to dance sensual bachata to the current bachata music then we should be happy as after all they are dancing to bachata music. A genre that was hidden from the world and has now become one the most popular latin dances, maybe even more than the well known salsa.",
- "author": "Fernando Ania"
+    "name": "Origin of Bachata",
+    "id": 1,
+    "date": "21/10/2016",
+    "summary": "Bachata. One of the most popular latin dances in the world has traveled a long way since it started. Now it has evolved into a beautiful art but it's important to remember the origins of bachata.",
+    "imageUrl": "https://cdn.everfest.com/uploads/festival_series/hosted_cover_photo/festival-del-merengue-santo-domingo-dominican-republic.jpg?v=1472281692",
+    "article": [
+        {
+            "para1": "Bachata originates from the fields in the dominican republic. Similarly to salsa this music was created by the common people. These people did not have school education or a title that qualified them to create a music genre. However, due to their contact with nature and absence of the technological advances they were able enjoy from a time where their minds could wonder free of the stress we have today. As a source of fun they developed the music we know today as Traditional or Dominican Bachata. I prefer the term Traditional Bachata as when we talk about music all Bachata is dominican. For example, there is no such thing as Spanish Bachata, French Bachata, Polish Bachata, etc. Now, when we refer to the dance then it makes sense to use Dominican Bachata as it refers to the original bachata given that we have many style of bachata (e.g., Bachata Sensual, Bachatango, Bachata moderna, etc)."
+        },
+        {
+            "para2": "At the moment there is a lot of drama in the Bachata world due to the rise of the different styles of bachata dances, as they have become more popular than the traditional bachata and have now become the face of bachata. "
+        },
+        {
+            "para3": "How were this styles developed and why?"
+        },
+        {
+            "para4": "This question was one of the questions that I pondered for a while as I found it incredible that people could take the bachata essence and mix it with their own dance experience and culture to make something new."
+        },
+        {
+            "para5": "The main reason why these new styles emerged is due to the influences of U.S pop music in the Dominican Republic. As U.S pop music gain traction bachata in the Dominican Republic became slower and gained a different feel to. Therefore styles such as Sensual Bachata attempt to capture this feeling by adding circular movements to the dance. "
+        },
+        {
+            "para6": "My opinion on this regard is that despite the how different the new style of bachata are from how bachata is danced traditionally we should embrace them. I’m not saying that we should disregard traditional bachata, instead that we let it be. People will dance bachata however they want to dance. This is a social dance and if the people prefer to dance sensual bachata to the current bachata music then we should be happy as after all they are dancing to bachata music. A genre that was hidden from the world and has now become one the most popular latin dances, maybe even more than the well known salsa."
+        }
+    ],
+    "author": "Fernando Ania"
 }
